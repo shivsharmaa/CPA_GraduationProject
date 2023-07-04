@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Campus Placement Automation | @ CPA'S first design Website</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+
+<!-- End WOWSlider.com HEAD section -->
+  
+  <!--Favicon-->
+  <!-- Title me image ke -->
+  <link rel="shortcut icon" href="images/kbc.png" type="image/png">
+  
+
+</head>
+
+<body>
+<!-- header -->
+<header id="header" class="header fixed-top">
+  <!-- TOP HEADER -->
+  <div class="top-header  py-1">
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a href="#" class="text-color mr-3 p-2 " style=""><i class="ti-mobile"></i> &nbsp;+91-8126359226</a>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">Notice</a></li>
+            <!-- <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#">       </a></li> -->
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="dropdown" >Login</a>
+               <div class="dropdown-menu">
+              <a class="dropdown-item text-dark" href="company_login.html" >Company Login</a>
+              <a class="dropdown-item text-dark" href="college_login.html">College Login</a>
+              <a class="dropdown-item text-dark" href="student_login.html">Student Login</a>
+              <a class="dropdown-item text-dark" href="admin_login.html" >Admin Login</a>
+              
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- NAVBAR STARTS -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light  p-0">
+        <a href="index.html" class="navbar-brand" style="color:gray !important; "><strong>Campus Placement Automation</strong></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">About us</a>
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about-us.html">Campus placement Automation</a>
+              <a class="dropdown-item" href="about-us.html"><i class="fa fa-user-secret fa-2x"></i> -Admin's Profile</a>
+            </div> -->
+            </li>
+            
+            <li class="nav-item dropdown view"><a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="company_reg.html">Company Registration</a>
+              <a class="dropdown-item" href="college_reg.html">College Registration</a>
+              <a class="dropdown-item" href="student_reg.html">Student Registration</a>
+              
+            </div>
+            </li>
+            
+            <li class="nav-item "><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div>  
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+              <h2 style="padding-left: 40%; color: gray;">Login</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <div class="row"><!-- 
+                <div class="col-4" style="background: #E50E16;">
+                <img src="" alt="" style="margin-top: 50px; width: 100%;">
+              </div> -->
+              <div class="col-12">
+                <form action="login.jsp" class="row">
+                  
+                    <div class="col-12"><i class="fa fa-user fa-2x"></i> <label class="font-weight-bold">&nbsp;Username:</label><br>
+                        <input type="text" class="form-control mb-3" id="loginid" name="loginid" placeholder=" Enter UserName/ Email">
+                    </div>
+                    <div class="col-12"><i class="fa fa-lock fa-2x"></i><label class="font-weight-bold">&nbsp; Password:</label><br>
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder=" Enter Password">
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">
+                            <button type="submit" class="btn btn-primary">LOGIN</button>
+                          </div>
+                          <div class="col-4" style="margin-top: 30px;">
+                            <a href="#" title="" data-toggle="modal" data-target="#forgetPassword">Forget Password</a>
+                          </div>
+                        </div>
+                    </div>
+                </form>
+              </div>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal -->
+<!-- Modal -->
+<div class="modal fade" id="forgetPassword" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+              <h2 style="padding-left: 0%;">Reset Password</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+              <div class="col-12">
+                <form action="#" class="row">
+                    <div class="col-12"><i class="fa fa-envelope-o fa-2x"></i> <label class="font-weight-bold">&nbsp;Email:</label><br>
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder=" Enter Email">
+                    </div>
+                    <div class="col-12"><i class="fa fa-phone fa-2x"></i><label class="font-weight-bold">&nbsp; Phone No.:</label><br>
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder=" Enter Phone No.">
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">
+                            <button type="button" class="btn btn-primary">Send Email</button>
+                          </div>
+                          
+                        </div>
+                    </div>
+                </form>
+              </div>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal -->
+
+<!-- Pop-Up modal -->
+
+<!-- pop-Up modal -->
+
+
+<!-- slider -->
+<div id="wowslider-container1" style="margin-top: 3rem;">
+<div class="ws_images"><ul>
+    <li><img src="data1/images/slider2.jpg" alt="Campus placement Automation" title="Campus placement Automation" id="wows1_0"/></li>
+    <li><a href=""><img src="data1/images/slider3.jpg" alt="jquery carousel slider" title="Campus placement Automation" id="wows1_1"/></a></li>
+    <li><img src="data1/images/slider5.jpg" alt="Campus placement Automation" title="Campus placement Automation" id="wows1_2"/></li>
+    <li><img src="data1/images/slider6.jpg" alt="Campus Placement Automation" title="Campus placement Automation" id="wows1_0"/></li>
+  </ul></div>
+  <div class="ws_bullets"><div>
+    <a href="#" title="Campus placement automation"><span><!-- <img src="data1/tooltips/slider2.jpg" --> alt="Campus placement automation"/>1</span></a>
+    <a href="#" title="Campus placement automation"><span><!-- <img src="data1/tooltips/slider3.jpg" --> alt="Campus placement automation"/>2</span></a>
+    <a href="#" title="Campus placement automation"><span><!-- <img src="data1/tooltips/slider5.jpg" --> alt="Campus placement automation"/>3</span></a>
+    <a href="#" title="Campus placement automation"><span><!-- <img src="data1/tooltips/slider6.jpg" --> alt="Campus placement automation"/>4</span></a>
+  </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="#"></a> </div>
+<div class="ws_shadow"></div>
+</div>  
+
+<!-- /slider -->
+
+<!-- courses -->
+<section class="section-sm" style="margin-top: 100px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3" data-aos="fade-left">Our Training</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block" data-aos="fade-left"></div>
+          <div>
+            <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block" data-aos="fade-left">see all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item 1 -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <div class="card-body" data-aos="flip-left">
+        <a href="#.html">
+          <h4 class="card-title" >Java Training</h4>
+        </a>
+        <p class="card-text mb-4">Campus Placement Automation  Online / Offline training on Java technologies. .</p>
+        </div>
+    </div>
+  </div>
+  <!-- course item 2-->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <div class="card-body" data-aos="flip-left">
+        
+        <a href="#.html">
+          <h4 class="card-title" >Python training</h4>
+        </a>
+        <p class="card-text mb-4 text-justify" > Campus Placement Automation  Online / Offline training on Python chnologies. .</p>
+        </div>
+    </div>
+  </div>
+  <!-- course item 3-->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <div class="card-body" data-aos="flip-left">
+        
+        <a href="#.html">
+          <h4 class="card-title"> HTML5 / CSS3</h4>
+        </a>
+        <p class="card-text mb-4 text-justify" >Campus Placement Automation  Online / Offline training on HTML5/CSS3...</p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- course item 4-->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <div class="card-body" data-aos="flip-left">
+                <a href="#.html">
+          <h4 class="card-title">C language </h4>
+        </a>
+        <p class="card-text mb-4 text-justify">Campus Placement Automation  Online / Offline training on C language. .</p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- course item 5-->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <div class="card-body" data-aos="flip-left">
+        
+        <a href="#.html">
+          <h4 class="card-title">Interview Preparation</h4>
+        </a>
+        <p class="card-text mb-4 text-justify">Campus Placement Automation  Provide to Online Interview preparation and Question
+        </p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- course item 6-->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <div class="card-body" data-aos="flip-left">
+        <a href="#.html">
+          <h4 class="card-title">MNC Exam Paper</h4>
+        </a>
+        <p class="card-text mb-4 text-justify">Campus Placement Automation  provide to MNC Technical question(like:- Wipro, Infosys, TCS, Mindtree, Capgemini and many more MNC type exam paper) </p>
+         </div>
+    </div>
+  </div>
+</div>
+<!-- /course list -->
+    <!-- mobile see all button -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="courses.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /courses -->
+
+<!-- banner-feature -->
+<section class="bg-gray">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-xl-4 col-lg-5 align-self-end">
+        <img class="img-fluid w-100" data-aos="fade-right" src="images/banner/banner-feature.png" alt="banner-feature">
+      </div>
+      <div class="col-xl-8 col-lg-7">
+        <div class="row feature-blocks bg-gray justify-content-between">
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon" data-aos="fade-left"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4" data-aos="fade-left">CPA News</h3>
+            <hr>
+            <p class="text-justify" data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon" data-aos="fade-left"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4" data-aos="fade-left">Our Notice Board</h3>
+            <hr>
+            <p class="text-justify text-dark" data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon" data-aos="fade-left"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4" data-aos="fade-left">Our Achievements</h3>
+            <hr>
+            <p class="text-justify text-dark" data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <!-- <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon" data-aos="fade-left"></i> -->
+            <i class=" fa fa-user-o mb-xl-4 mb-lg-3 mb-4 feature-icon" data-aos="fade-left"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4" data-aos="fade-left">CPA's Student</h3>
+            <hr>
+            <p class="text-justify text-dark" data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /banner-feature -->
+
+<!-- about us -->
+<section class="section">
+  <div class="container about_us">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 order-2 col-sm-12 col-12 order-md-1" style="">
+        <h2 class="section-title" data-aos="zoom-in-up">About Campus Placement Automation</h2>
+        <hr>
+          <p class="text-justify" data-aos="zoom-in-up" style="font-family: Times New Roman;">Campus Placement Automation platform for campus placement process which connects companies, colleges and candidates online with each other for campus recruitment automation.
+
+                This platform provides companies the opportunity to post internships and fresher job requirements online. A recruiter/company can conduct the entire process of recruitment sitting at his desk with multiple candidates connected to the system from different locations.
+
+                College students can view fresher job openings on the portal itself. These openings are monitored by the college training and placement officer and he/she can contact the company at the click of a button and invite them for online Campus Placements.
+
+                Talentick comes inbuilt with student search features, smart aptitude testing modules, configurable video conferencing solutions, intelligent scheduling and much more. This makes Talentick a cost effective and an efficient solution for Campus Placements and Campus Automation </p>
+        <a href="about-us.html" class="btn btn-primary-outline" data-aos="zoom-in-up">Learn more</a>
+      </div>
+      <div class="col-lg-6 col-md-6 order-1 col-sm-12 col-12 order-md-2 mb-4 mb-md-0 mr-0">
+        <img class="img-fluid " src="images/about/about-cpa.jpg" style="height: " alt="about image" data-aos="zoom-in-up">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about us -->
+
+
+
+<!-- Download section -->
+<section class="section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center" data-aos="zoom-in">
+        <h6 class="text-white font-secondary mb-0" >Click here to download the MNC apptitute paper</h6>
+        <h2 class="section-title text-white">Notes for MNC Exam</h2>
+        <a href="student_login.html" class="btn btn-secondary">Download Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /download section -->
+
+<!-- success story -->
+<section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-4 position-relative success-video">
+        <a class="play-btn venobox" href="https://www.youtube.com/watch?v=KNfJg1xJzA0" data-vbtype="video">
+          <i class="ti-control-play"></i>
+        </a>
+      </div>
+      <div class="col-lg-6 col-sm-8">
+        <div class="bg-white p-5">
+          <h2 class="section-title">Success Stories</h2>
+         
+          <p class="text-justify text-dark" style="font-family: 'sans-serif',Times New Roman;"><i class="fa fa-quote-left " style="font-size: 50px; color: /*#FF2F2C*/ gray; "></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+          <p class="text-justify text-dark" style="font-family: 'sans-serif',Times New Roman;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <i class="fa fa-quote-right mx-2" style="font-size: 50px; color: /*#FF2F2C*/ gray;"></i> </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /success story -->
+
+<!-- Testimonial and selected student -->
+<section class="section testimonials" id="testimonial">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Testimonial -->
+      <div class="col-lg-6 col-xl-6 col-md-12">
+        <h2 class="text-center" >Testimonials</h2>
+        <hr>
+        <br>
+        <div class="carousel slide" id="carousel-testimonials" data-ride="carousel" data-interval="3000">
+          <ol class="carousel-indicators" >
+            <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-testimonials" data-slide-to="1" ></li>
+            <li data-target="#carousel-testimonials" data-slide-to="2" ></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active text-center">
+              <img src="images/testimonial/profile 3.jpg" alt="testimonial 1" class="center-block">
+              <h5>Rishab Bhatnagar</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- TEstimonial 2 -->
+            <div class="carousel-item text-center">
+              <img src="images/testimonial/profile 1.jpg" alt="testimonial 1" class="center-block">
+              <h5>Shivam Sharma</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item  text-center">
+              <img src="images/testimonial/profile2.jpg" alt="testimonial 1" class="center-block">
+              <h5>Sumesh Dutt Sharma</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="carousel-item  text-center">
+              <img src="images/testimonial/profile 4.jpg" alt="testimonial 1" class="center-block">
+              <h5>Yogita Jain</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- Our Selection -->
+      <div class="col-lg-6 col-xl-6 col-md-12">
+        <div class="selected">
+          <div class="row text-center">
+          <div class="col-12 ">
+            <h2 class="">Selected Student</h2>
+          </div>
+          <hr>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left">Robert</b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left">Chris Evans </b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left"> Mark </b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left"> Chris</b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left"> Scartlett </b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left">Jeremy </b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left"> Paul Rudd</b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-6 col-sm-6 mb-5 mb-lg-0">
+              <div class="card" style="width: 8rem; height: 10rem;">
+                <img class="card-img-top" src="images/selected/student.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title text-left"> Brie Larson </b>
+                  <p class="text-muted">AIR 100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</section>
+<!-- Testimonial and selected student -->
+
+<!-- teachers -->
+<section class="section teacher-section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3" data-aos="fade-left">Our Training Teacher </h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block" data-aos="fade-left"></div>
+          <div>
+            <a href="teachers.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block" data-aos="fade-left">see all</a>
+          </div>
+        </div>
+      </div>
+    <div class="row justify-content-center">
+      <!-- teacher -->
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Rishab Bhatnagar</h4>
+            </a>
+            <h6>Teacher</h6>
+            <p>Java</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Praveen Kr Goswami</h4>
+            </a>
+            <h6>Teacher</h6>
+            <p>Python</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Rishabh Chauhan</h4>
+            </a>
+            <h6>Teacher</h6>
+            <p>Aptitude / Reasoning</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Somya Gaur</h4>
+            </a>
+            <h6>Teacher</h6>
+            <p>HTML / CSS</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /teachers -->
+
+
+
+<!-- Admin's-->
+<section class="section teacher-section">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3" data-aos="fade-left">Admin's</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block" data-aos="fade-left"></div>
+          <div>
+           <!--  <a href="teachers.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block" data-aos="fade-left">see all</a>
+          --> </div>
+        </div>
+      </div>
+    <div class="row justify-content-center">
+      <!-- Admin -->
+      <div class="col-lg-3 col-sm-6 col-12 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile 1.jpg" style="width: ; height: 200px;" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Shivam Sharma</h4>
+            </a>
+            <p>Admin 1</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="https://www.facebook.com/profile.php?id=100004594923591"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Admin -->
+      <div class="col-lg-3 col-sm-6 col-12 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile 3.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Rishab Bhatnagar</h4>
+            </a>
+            <p> Admin 2</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="https://www.facebook.com/profile.php?id=100011209080699&epa=SEARCH_BOX"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Admin -->
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Sumesh Dutt Sharma</h4>
+            </a>
+            <p>Admin 3</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="https://www.facebook.com/sumsiddhartha.sharma"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Admin -->
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow teacher"  data-aos="fade-up">
+          <img class="card-img-top rounded-0" src="images/testimonial/profile 4.jpg" style="width: ; height: 220px;" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Yogita Jain</h4>
+            </a>
+            <p>Admin 4</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="https://www.facebook.com/yogita.jain.3154"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Admin's -->
+
+
+
+<!-- footer -->
+<footer>
+
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+
+        <!-- company -->
+        <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 mr-1">COMPANY</h4>
+          <hr>
+          <ul class="list-unstyled">
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="about-us.html">About Us</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="teachers.html">Our Teacher</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="contact.html">Contact</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 mr-1">QUICK LINKS</h4>
+          <hr>
+          <ul class="list-unstyled">
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="courses.html">Courses</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="event.html">Upcoming Courses</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="gallary.html">Gallary</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 mr-1">Training Partner</h4>
+          <hr>
+          <ul class="list-unstyled">
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">@B2E Coder</a></li>
+            <!-- <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">Online Test</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">Video Classes</a></li>
+            <li class="mb-3"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">Result</a></li>
+          --> </ul>
+        </div>
+      <!-- GET IN TOUCH -->
+        <div class="col-lg-3 col-sm-8 mb-5 mb-lg-0">
+          
+          <h4 class="text-white mb-5 mr-1">GET IN TOUCH</h4>
+          <hr>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="ti-angle-double-right mr-1 arrow"></i><a href="#" class="text-color" title="">Bhagwan Talkies crossing, Nagla Padi, Agra, Uttar Pradesh 282005</a></li>
+            <li class="mb-2"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">+91-8126359226</a></li>
+            <li class="mb-2"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">+91-8218179366</a></li>
+            
+            <li class="mb-2"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">+91-7500424802</a></li>
+            <li class="mb-2"><i class="ti-angle-double-right mr-1 arrow"></i><a class="text-color" href="#">campusplacement@cpa.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-2 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">© Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+             Design by <a href="https://themefisher.com">CPA</a></p> . All Rights Reserved By Campus Placement Automation.
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/login"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.instagram.com/"><i class="ti-instagram text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+<!-- first jquery,proper.js,bottstrap -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- slider -->
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+<!-- scroll effect -->
+<script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
+
+</body>
+</html>

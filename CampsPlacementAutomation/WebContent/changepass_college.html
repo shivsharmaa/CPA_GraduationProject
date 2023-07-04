@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Dash Board</title>
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrapp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrapp/js/bootstrap.min.js">
+  <style>
+  	h3,h5,.card-text{
+  		font-family: "Comic Sans MS";
+
+  	}
+  	.card-img-top{
+  		width: 18rem;
+  		height:200px;
+  	}
+  	.card-text{
+  		text-align: center;
+  	}
+
+  </style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<ul class="navbar-nav">
+			<li class="nav-item ">
+				<h3 style="margin-right: 850px"><a href="#" class="nav-link">College Dashboard</a></h3>
+			</li>
+			
+		</ul>
+	</nav>
+
+	
+	<form class="mt-5" action="change_college.jsp">
+
+     <div class="form-group">
+    <label >College Email</label>
+    <input type="email" class="form-control" name="coll_email"  placeholder="Enter email">
+    </div>
+  <div class="form-group">
+      <label >Current Password</label>
+    <input type="password" class="form-control" name="coll1_pass" placeholder="Password">
+  </div>
+   <div class="form-group">
+    <label >New Password</label>
+    <input type="password" class="form-control" name="coll2_pass" placeholder="Password">
+  </div>
+   <div class="form-group">
+    <label >Confirm Password</label>
+    <input type="password" class="form-control" name="coll3_pass" placeholder="Password">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Change</button>
+</form>
+
+</body>
+</html>

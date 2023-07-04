@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Dasboard</title>
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrapp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrapp/js/bootstrap.min.js">
+  <style>
+  	h3,h5{
+  		font-family: "Comic Sans MS";
+
+  	}
+  	
+
+  </style>
+</head>
+<body>
+	
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<ul class="navbar-nav">
+				<li class="nav-item ">
+					<h3 style="margin-right: 850px"><a href="#" class="nav-link">Admin Dashboard</a></h3>
+				</li>
+			</ul>
+		</nav>
+	
+	<form class="mt-5" action="add_college.jsp">
+  <div class="form-group" >
+    <label >College Name</label>
+    <input type="text" class="form-control" name="coll_name"  placeholder="Enter Name">
+     </div>
+     
+    <div class="form-group">
+    <label >College University</label>
+    <input type="text" class="form-control" name="coll_uni"  placeholder="Enter University Name">
+     </div>
+     
+       
+    <div class="form-group">
+    <label >College Employee Id</label>
+    <input type="text" class="form-control" name="coll_eid"  placeholder="Enter Employee Id">
+     </div>
+     
+     <div class="form-group">
+    <label >College Contact</label>
+    <input type="text" class="form-control" name="coll_contact"  placeholder="Enter Contact">
+     </div>
+     
+     <div class="form-group">
+    <label >College Email</label>
+    <input type="email" class="form-control" name="coll_email"  placeholder="Enter email">
+    </div>
+     
+  <div class="form-group">
+    <label >Password</label>
+    <input type="password" class="form-control" name="coll_pass" placeholder="Password">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">ADD</button>
+</form>
+	
+	
+
+</body>
+</html>
